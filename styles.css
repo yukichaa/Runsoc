@@ -1,0 +1,388 @@
+@font-face {
+  font-family: "Josefin";
+  src: url(./fonts/JosefinSans-VariableFont_wght.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Josefin";
+  src: url(./fonts/JosefinSans-VariableFont_wght.ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Josefin";
+  src: url(./fonts/JosefinSans-Italic-VariableFont_wght.ttf) format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Josefin";
+  src: url(./fonts/JosefinSans-Italic-VariableFont_wght.ttf) format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Yeseva";
+  src: url(./fonts/YesevaOne-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yeseva";
+  src: url(./fonts/YesevaOne-Regular.ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+html {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Josefin';
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: 'Yeseva', serif;
+}
+
+h2 {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-family: 'Yeseva', serif;
+}
+
+h5 {
+  font-size: 1.3rem;
+
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+
+
+/* HEADER STYLES */
+header {
+  height: 7rem;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(145, 193, 532, 0.5);
+  z-index: 1;
+}
+
+header img {
+  width: 2.6rem;
+}
+
+header .headerstuff {
+  width: 95%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.logo {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.logo img {
+  width: 6rem;
+}
+
+.socials {
+  display: inline-flex;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 100%;
+  float: right;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 1.5rem;
+  padding: 0 5px;
+  background-color: rgb(222, 222, 200);
+  box-shadow: darkgrey 2px 2px 4px;
+}
+
+.socials h4 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.socials li {
+  padding: 0 10px;
+  transition: filter 0.2s;
+}
+
+.socials li:not(:first-of-type):hover {
+  filter: drop-shadow(grey 3px 3px 3px);
+}
+
+
+
+
+
+/* FEATURE STYLES */
+main {
+  position: relative;
+}
+
+.feature {
+  height: 700px;
+  background-image: url('./images/FEATURE4.png');
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  color: white;
+  text-shadow: rgba(50, 50, 50) 3px 3px 4px;
+  flex-flow: column;
+}
+
+.feature h1 {
+  margin-bottom: 20px;
+}
+
+button {
+  font-family: 'Yeseva', serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  background-color: rgba(80, 193, 200, 1);
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  text-shadow: darkgrey 1px 1px 2px;
+  border: none;
+  transition: text-shadow 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  text-shadow: white 1px 1px 2px;
+  box-shadow: darkgrey 2px 2px 4px;
+}
+
+
+
+
+
+/* RUNS STYLES */
+
+.runs h2 {
+  font-weight: 400;
+  text-shadow: rgb(150, 150, 150) 2px 2px 3px;
+}
+
+.runs h3 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+  
+}
+
+
+
+.runs {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-image: url(images/BACKGROUND.png);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.runs img {
+    width: 350px;
+    border-radius: 40px;
+}
+
+.runs div {
+  margin: 0;
+  display: inline-flex;
+  padding-bottom: 3rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+}
+
+.runs #cta {
+  padding-bottom: 10px;
+  
+}
+
+.runs .text {
+
+  width: 30%;
+  justify-self: center;
+  padding: 0 30px;
+  display: flex;
+  flex-flow: column;
+
+}
+
+.runs .text h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.runs .text h5 {
+  margin-top: 15px;
+  margin-bottom: 7px
+}
+
+.runs .text p {
+  margin-bottom: 10px;
+  padding: 0;
+  margin-top: 9px;
+
+}
+
+
+#monday .text {
+  background-color: rgb(255, 200, 71);
+  
+}
+
+#tuesday .text {
+  background-color: rgb(82, 158, 252);
+  color: white;
+}
+
+
+#friday .text {
+  background-color: rgb(255, 200, 71);
+
+}
+
+#saturday .text {
+  background-color: rgb(82, 158, 252);
+  color: white;
+
+}
+
+#sunday .text {
+  background-color: rgb(255, 200, 71);
+}
+
+
+
+
+
+/* FOOTER STYLES */
+footer {
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-weight: 300;
+  background-color: rgb(82, 158, 252);
+}
+
+footer p {
+  font-weight: 400;
+  color: whitesmoke;
+}
+
+/* RESPONSIVENESS STYLES */
+
+/* PHONES */
+@media only screen and (max-width: 1066px) {
+
+  html {
+    font-size: 16px;
+  }
+
+  .runs img {
+    width: 350px;
+    border-radius: 40px;
+  }
+
+  .feature {
+    height: 1000px;
+  }
+
+  #monday img:last-of-type {
+    display: none;
+  }
+
+  #friday img:last-of-type {
+    display: none;
+  }
+
+  #sunday img:first-of-type {
+    display: none;
+  }
+
+  .runs div {
+    margin: 0;
+    display: inline-flex;
+    padding-bottom: 5rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+  }
+
+  .runs h2 {
+    font-weight: 400;
+    text-shadow: rgb(150, 150, 150) 2px 2px 3px;
+    font-size: 1.9rem;
+  }
+  
+  .runs h3 {
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-left: 2rem;
+  }
+}
+    
+
+/* BIG MONITOR */
+@media only screen and (min-width: 2300px) {
+
+  html {
+    font-size: 24px;
+  }
+
+  .runs img {
+    width: 600px;
+    border-radius: 80px;
+
+  }
+
+  .feature {
+    height: 1200px;
+  }
+
+}
