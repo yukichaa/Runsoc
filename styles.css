@@ -301,12 +301,13 @@ button:hover {
 /* FOOTER STYLES */
 footer {
   width: 100%;
-  height: 3.5rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-content: center;
   font-weight: 300;
   background-color: rgb(82, 158, 252);
+  line-height: 1.2;
 }
 
 footer p {
@@ -317,7 +318,82 @@ footer p {
 /* RESPONSIVENESS STYLES */
 
 /* PHONES */
-@media only screen and (max-width: 1066px) {
+@media only screen and (max-width: 768px) {
+
+  
+
+  html {
+    font-size: 11px;
+  }
+
+  .socials li {
+    padding: 0 4px;
+    transition: filter 0.2s;
+  }
+
+  .runs img {
+    width: 150px;
+    border-radius: 20px;
+  }
+
+  .feature {
+    height: 600px;
+  }
+
+  #monday img:last-of-type {
+    display: none;
+  }
+
+  #friday img:last-of-type {
+    display: none;
+  }
+
+  #sunday img:first-of-type {
+    display: none;
+  }
+
+  .runs div {
+    margin: 0;
+    display: inline-flex;
+    padding-bottom: 4rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+  }
+
+  .runs h2 {
+    font-weight: 400;
+    text-shadow: rgb(150, 150, 150) 2px 2px 3px;
+    font-size: 1.9rem;
+  }
+  
+  .runs h3 {
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+  }
+
+  .runs .text h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+  }
+  
+  .runs .text h5 {
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-size: 1.2rem;
+  }
+
+  footer {
+    height: 5rem;
+  } 
+}
+    
+
+/* TABLETS */
+@media only screen and (min-width: 750px) and (max-width: 1066px) {
 
   html {
     font-size: 16px;
@@ -365,6 +441,19 @@ footer p {
     font-size: 1.3rem;
     margin-left: 2rem;
   }
+
+  .runs .text h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+  }
+  
+  .runs .text h5 {
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-size: 1.2rem;
+  }
+  
 }
     
 
