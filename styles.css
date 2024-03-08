@@ -315,6 +315,16 @@ footer p {
   color: whitesmoke;
 }
 
+footer a {
+  color: whitesmoke;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color:pink;
+}
+
+
 /* RESPONSIVENESS STYLES */
 
 /* PHONES */
