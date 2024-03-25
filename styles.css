@@ -268,13 +268,27 @@ button:hover {
 }
 
 
+.runs a {
+  text-decoration: none;
+}
+
+
 #monday .text {
   background-color: rgb(255, 200, 71);
+  color: black;
   
+}
+
+#monday a, #friday a, #sunday a {
+  color: black;
 }
 
 #tuesday .text {
   background-color: rgb(82, 158, 252);
+  color: white;
+}
+
+#tuesday a, #saturday a {
   color: white;
 }
 
@@ -293,7 +307,6 @@ button:hover {
 #sunday .text {
   background-color: rgb(255, 200, 71);
 }
-
 
 
 
